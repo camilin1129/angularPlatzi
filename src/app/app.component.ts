@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'platzisquare';
   listo = false;
+  nombre:string = '';
+  apellido:string = '';
+
   constructor (){
     setTimeout(() => {
       this.listo = true;
