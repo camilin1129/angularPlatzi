@@ -7,20 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'platzisquare';
-  listo = false;
-  nombre:string = '';
-  apellido:string = '';
+  lugares: any = [
+      {active: true, nombre: 'Floreria la Gardenia'},
+      {active: true, nombre: 'Donas la pasadita'},
+      {active: true, nombre: 'Veterinaria Huellitas felices'},
+      {active: false, nombre: 'Sushi Sushiroll'},
+      {active: true, nombre: 'Hotel la Gracia'},
+      {active: false, nombre: 'Zapateria el Clavo'}
+  ];
+  lat: number = 4.7186655;
+  lng: number = -74.0356525;
 
+    personas: any = [
+        {nombre: 'Juan Perez', edad: 18},
+        {nombre: 'Carlos Camargo', edad: 29},
+        {nombre: 'Pedro Melo', edad: 15},
+        {nombre: 'Andres Chacho', edad: 17},
+        {nombre: 'Hernesto Perro', edad: 18},
+        {nombre: 'Caro rico', edad: 19},
+        {nombre: 'Coni Chupa', edad: 12},
+    ];
   constructor (){
-    setTimeout(() => {
-      this.listo = true;
-    }, 3000)
-  }
-
-  a = 0;
-  hacerAlgo(){
-    setTimeout(() => {
-        this.a += 1;
-        }, 1000)
   }
 }
